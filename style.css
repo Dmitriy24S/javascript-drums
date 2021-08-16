@@ -1,0 +1,43 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* padding: 0;
+  margin: 0; */
+}
+
+body {
+  background-color: ghostwhite;
+  /* font-family: sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande"; */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex-direction: row;
+}
+
+.key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 3px;
+  gap: 4px;
+  border: 1px solid;
+  min-width: 85px;
+  min-height: 62px;
+  transition: all 0.07s ease;
+}
+
+.playing {
+  transform: scale(1.1);
+  outline: 6px solid tomato;
+  /* outline: 2px solid rebeccapurple; */
+  /* outline: 4px solid rebeccapurple; */
+  /* outline: 6px solid violet; */
+  /* outline-offset: -8px; */
+}
